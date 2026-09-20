@@ -90,7 +90,7 @@ Nhan xet chinh: chunk theo cau va chunk theo cau truc chinh sach deu tot hon fix
 - **Loai chien luoc:** so sanh `fixed_size`, `by_sentences`, `recursive`.
 - **Mo ta & ly do chon:** Duc benchmark cac chien luoc mac dinh bang lexical-hash offline. Ket qua tot nhat la `by_sentences` voi `71 chunks`, `avg_len = 549.1`, `Hit@1 = 80%`, `Hit@3 = 100%`, `MRR = 0.900`, `lab_score = 9/10`. Dieu nay cho thay voi chinh sach dang FAQ, don vi cau thuong chua du y tra loi hon la cat theo ky tu.
 
-**Thanh vien 3 - [bo sung ten]**
+**Thanh vien 3 - Hoang Van Duong**
 - **Loai chien luoc:** custom `PolicyStructureChunker(chunk_size=450, max_sentences=2)`.
 - **Mo ta & ly do chon:** Chien luoc nay la hybrid: tach theo cau de giu don vi ngu nghia, dung recursive fallback khi cau/bang qua dai, gioi han moi chunk toi da 450 ky tu, va lap lai tieu de tai lieu trong tung chunk. Tren corpus hien tai, chien luoc dat `Hit@1 = 80%`, `Hit@3 = 100%`, `MRR = 0.867`, `lab_score = 9/10`. Doi lai so chunk tang len 1,273 nen chi phi embedding/luu tru cao hon.
 
