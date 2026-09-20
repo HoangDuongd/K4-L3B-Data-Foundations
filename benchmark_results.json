@@ -1,0 +1,1040 @@
+{
+  "embedding_backend": "lexical-hash-4096",
+  "data_dir": "data/chinh-sach-doi-tra",
+  "config": {
+    "provider": "lexical",
+    "chunk_size": 500,
+    "overlap": 50,
+    "sentences": 3
+  },
+  "strategies": {
+    "fixed_size": {
+      "chunk_stats": {
+        "documents": 14,
+        "chunks": 659,
+        "avg_length": 496.1745068285281,
+        "min_length": 52,
+        "max_length": 500
+      },
+      "metrics": {
+        "hit_at_1": 0.2,
+        "hit_at_3": 0.6,
+        "mrr": 0.4,
+        "lab_score": 4,
+        "max_lab_score": 10
+      },
+      "queries": [
+        {
+          "question": "Thực phẩm tươi sống và đông lạnh phải gửi yêu cầu trả hàng/hoàn tiền trong bao lâu?",
+          "gold_answer": "Trong vòng 24 giờ kể từ khi đơn hàng được cập nhật giao hàng thành công.",
+          "gold_doc_ids": [
+            "shopee-article-188931",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 2,
+          "evidence_rank": 2,
+          "hit_at_1": false,
+          "hit_at_3": true,
+          "reciprocal_rank": 0.5,
+          "score": 1,
+          "metadata_filter": {
+            "audience": "buyer"
+          },
+          "filter_changed_top3": false,
+          "results": [
+            {
+              "id": "shopee-article-77262#21",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 21,
+              "score": 0.44436,
+              "contains_evidence": false,
+              "preview": "m tại Shopee Mall trong trường hợp có sự khác nhau trong quy định của Chính Sách Trả Hàng và Hoàn Tiền của Shopee Mall và Chính Sách Trả Hàng và Hoàn Tiền. 1.9. Thời hạn và điều ki"
+            },
+            {
+              "id": "shopee-article-77251#7",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 7,
+              "score": 0.433199,
+              "contains_evidence": true,
+              "preview": "c cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tươi sống và đông lạnh, Người Mua cần gửi yêu cầu trả hàng/hoàn tiền trong vòng 24 giờ kể từ lúc đơn hàng đ"
+            },
+            {
+              "id": "shopee-article-77262#4",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 4,
+              "score": 0.427516,
+              "contains_evidence": false,
+              "preview": "ủa Shopee Mall 1.1. Người Mua tại Shopee Mall có thể yêu cầu hoàn lại tiền và/hoặc trả hàng hóa đã mua tại Shopee Mall (“Sản Phẩm tại Shopee Mall”) bằng cách nhấn vào nút “Yêu Cầu "
+            }
+          ],
+          "filtered_results": [
+            {
+              "id": "shopee-article-77262#21",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 21,
+              "score": 0.44436,
+              "contains_evidence": false,
+              "preview": "m tại Shopee Mall trong trường hợp có sự khác nhau trong quy định của Chính Sách Trả Hàng và Hoàn Tiền của Shopee Mall và Chính Sách Trả Hàng và Hoàn Tiền. 1.9. Thời hạn và điều ki"
+            },
+            {
+              "id": "shopee-article-77251#7",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 7,
+              "score": 0.433199,
+              "contains_evidence": true,
+              "preview": "c cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tươi sống và đông lạnh, Người Mua cần gửi yêu cầu trả hàng/hoàn tiền trong vòng 24 giờ kể từ lúc đơn hàng đ"
+            },
+            {
+              "id": "shopee-article-77262#4",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 4,
+              "score": 0.427516,
+              "contains_evidence": false,
+              "preview": "ủa Shopee Mall 1.1. Người Mua tại Shopee Mall có thể yêu cầu hoàn lại tiền và/hoặc trả hàng hóa đã mua tại Shopee Mall (“Sản Phẩm tại Shopee Mall”) bằng cách nhấn vào nút “Yêu Cầu "
+            }
+          ]
+        },
+        {
+          "question": "Sau khi Shopee chấp nhận hoàn tiền, thẻ tín dụng hoặc ghi nợ nhận tiền trong bao lâu?",
+          "gold_answer": "Từ 7 đến 14 ngày làm việc, tùy theo ngân hàng.",
+          "gold_doc_ids": [
+            "shopee-article-189473"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": null,
+          "hit_at_1": false,
+          "hit_at_3": false,
+          "reciprocal_rank": 0.0,
+          "score": 0,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-189473#0",
+              "doc_id": "shopee-article-189473",
+              "chunk_index": 0,
+              "score": 0.31282,
+              "contains_evidence": false,
+              "preview": "# Shopee article 189473 [Trả hàng/ Hoàn tiền] Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Ho"
+            },
+            {
+              "id": "shopee-article-77243#66",
+              "doc_id": "shopee-article-77243",
+              "chunk_index": 66,
+              "score": 0.271364,
+              "contains_evidence": false,
+              "preview": "nào liên quan đến bất kỳ khiếu nại, khiếu kiện hoặc vi phạm sở hữu trí tuệ nào. 9. ĐẶT HÀNG VÀ THANH TOÁN 9.1. Vào từng thời điểm, phương thức thanh toán cho hàng hóa mua trên Sàn "
+            },
+            {
+              "id": "shopee-article-77243#92",
+              "doc_id": "shopee-article-77243",
+              "chunk_index": 92,
+              "score": 0.26776,
+              "contains_evidence": false,
+              "preview": "y quyền cho chúng tôi tiếp tục thực hiện việc ghi có hoặc ghi nợ vào Tài Khoản Nhận Tiền, sau khi áp dụng bất kỳ khoản phí có liên quan nào, vào bất kỳ tài khoản ngân hàng hoặc phư"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Nếu tự sắp xếp gửi hàng hoàn trả thì người mua có phải trả phí trước không?",
+          "gold_answer": "Có. Người mua trả phí trước; Shopee hỗ trợ hoàn phí trong 3-5 ngày làm việc nếu đủ điều kiện.",
+          "gold_doc_ids": [
+            "shopee-article-189477",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 2,
+          "hit_at_1": false,
+          "hit_at_3": true,
+          "reciprocal_rank": 0.5,
+          "score": 1,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-77251#30",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 30,
+              "score": 0.370186,
+              "contains_evidence": false,
+              "preview": "hông qua “Số Dư Tài Khoản Shopee” trên Ứng Dụng Shopee trong thời hạn 03 – 05 ngày làm việc kể từ ngày Người Mua đã gửi Sản Phẩm Hoàn Trả cho đơn vị vận chuyển và yêu cầu trả hàng/"
+            },
+            {
+              "id": "shopee-article-77251#29",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 29,
+              "score": 0.351017,
+              "contains_evidence": true,
+              "preview": "MUA 8.1. Với Sản Phẩm mua tại Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm: Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi hàng tại bưu cục”: Người Mua không phả"
+            },
+            {
+              "id": "shopee-article-77251#28",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 28,
+              "score": 0.320938,
+              "contains_evidence": false,
+              "preview": "đơn yêu cầu trả hàng/hoàn tiền được Shopee chấp nhận hoàn tiền ngay (không trả hàng) (theo quyết định riêng của Shopee), đơn giao không thành công thuộc kênh Người bán tự vận chuyể"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Người mua chưa nhận được hàng thì cần cung cấp bằng chứng gì?",
+          "gold_answer": "Không cần cung cấp bằng chứng; Shopee xử lý dựa trên hệ thống theo dõi đơn hàng.",
+          "gold_doc_ids": [
+            "shopee-article-79467"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-79467#1",
+              "doc_id": "shopee-article-79467",
+              "chunk_index": 1,
+              "score": 0.351264,
+              "contains_evidence": true,
+              "preview": "trường hợp, loại bằng chứng bạn cần chuẩn bị sẽ khác nhau. 1. Khiếu nại chưa nhận được hàng Nếu bạn chưa nhận được hàng, bạn không cần cung cấp bất kỳ bằng chứng nào. Shopee sẽ tự "
+            },
+            {
+              "id": "shopee-article-77484#38",
+              "doc_id": "shopee-article-77484",
+              "chunk_index": 38,
+              "score": 0.288933,
+              "contains_evidence": false,
+              "preview": "chuyển mỗi khi giao hàng cho đơn vị vận chuyển. Khi có bất kỳ khiếu nại hay tranh chấp nào về mất mát hàng hóa xảy ra, vận đơn/hóa đơn vận chuyển sẽ là bằng chứng vững chắc nhất ch"
+            },
+            {
+              "id": "shopee-article-77262#5",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 5,
+              "score": 0.280395,
+              "contains_evidence": false,
+              "preview": "Mall được cung cấp lần đầu tiên cho Người Mua tại Shopee Mall (“Thời Gian Yêu Cầu Trả Hàng”). Thông thường, ngày Sản Phẩm được cung cấp lần đầu tiên cho Người Mua tại Shopee Mall s"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Khi đóng gói hàng hoàn trả, người mua cần quay video và gửi kèm những gì?",
+          "gold_answer": "Quay video đóng gói và gửi đủ hộp, giấy tờ, phụ kiện, quà tặng đi kèm nếu có.",
+          "gold_doc_ids": [
+            "shopee-article-79508"
+          ],
+          "gold_doc_rank": 3,
+          "evidence_rank": null,
+          "hit_at_1": false,
+          "hit_at_3": false,
+          "reciprocal_rank": 0.0,
+          "score": 0,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-77251#24",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 24,
+              "score": 0.388125,
+              "contains_evidence": false,
+              "preview": "ười Mua phải hoàn trả hàng cho Người Bán. 6. YÊU CẦU ĐỐI VỚI SẢN PHẨM HOÀN TRẢ Để hạn chế các rủi ro phát sinh liên quan đến việc hoàn trả Sản Phẩm, Người Mua lưu ý cần phải đóng g"
+            },
+            {
+              "id": "shopee-article-77251#25",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 25,
+              "score": 0.32561,
+              "contains_evidence": false,
+              "preview": "Người Mua bắt buộc phải quay video và/hoặc chụp lại ảnh Sản Phẩm ngay khi nhận được và trong lúc đóng gói Sản Phẩm Hoàn Trả về để làm bằng chứng đối chiếu/khiếu nại về sau. Shopee "
+            },
+            {
+              "id": "shopee-article-79508#2",
+              "doc_id": "shopee-article-79508",
+              "chunk_index": 2,
+              "score": 0.315435,
+              "contains_evidence": false,
+              "preview": "hụ kiện, quà tặng đi kèm… (nếu có) và đóng gói với đầy đủ vật liệu, quy cách đóng gói theo tiêu chuẩn của Shopee hoặc như khi nhận hàng (quy cách đóng gói của Người bán). ⚠️ Lưu "
+            }
+          ],
+          "filtered_results": null
+        }
+      ]
+    },
+    "by_sentences": {
+      "chunk_stats": {
+        "documents": 14,
+        "chunks": 630,
+        "avg_length": 464.5190476190476,
+        "min_length": 24,
+        "max_length": 3659
+      },
+      "metrics": {
+        "hit_at_1": 0.8,
+        "hit_at_3": 0.8,
+        "mrr": 0.8,
+        "lab_score": 8,
+        "max_lab_score": 10
+      },
+      "queries": [
+        {
+          "question": "Thực phẩm tươi sống và đông lạnh phải gửi yêu cầu trả hàng/hoàn tiền trong bao lâu?",
+          "gold_answer": "Trong vòng 24 giờ kể từ khi đơn hàng được cập nhật giao hàng thành công.",
+          "gold_doc_ids": [
+            "shopee-article-188931",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": {
+            "audience": "buyer"
+          },
+          "filter_changed_top3": false,
+          "results": [
+            {
+              "id": "shopee-article-77251#7",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 7,
+              "score": 0.500712,
+              "contains_evidence": true,
+              "preview": "3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư"
+            },
+            {
+              "id": "shopee-article-79233#0",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 0,
+              "score": 0.45028,
+              "contains_evidence": false,
+              "preview": "# Shopee article 79233 [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Hoàn tiền] H"
+            },
+            {
+              "id": "shopee-article-77262#14",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 14,
+              "score": 0.388887,
+              "contains_evidence": false,
+              "preview": "Thời hạn và điều kiện Người Mua tại Shopee Mall được phép yêu cầu trả hàng: 1.9.1. Người Bán tại Shopee Mall và Shopee cùng đồng ý rằng Người Mua tại Shopee Mall có quyền gửi khiếu"
+            }
+          ],
+          "filtered_results": [
+            {
+              "id": "shopee-article-77251#7",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 7,
+              "score": 0.500712,
+              "contains_evidence": true,
+              "preview": "3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư"
+            },
+            {
+              "id": "shopee-article-79233#0",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 0,
+              "score": 0.45028,
+              "contains_evidence": false,
+              "preview": "# Shopee article 79233 [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Hoàn tiền] H"
+            },
+            {
+              "id": "shopee-article-77262#14",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 14,
+              "score": 0.388887,
+              "contains_evidence": false,
+              "preview": "Thời hạn và điều kiện Người Mua tại Shopee Mall được phép yêu cầu trả hàng: 1.9.1. Người Bán tại Shopee Mall và Shopee cùng đồng ý rằng Người Mua tại Shopee Mall có quyền gửi khiếu"
+            }
+          ]
+        },
+        {
+          "question": "Sau khi Shopee chấp nhận hoàn tiền, thẻ tín dụng hoặc ghi nợ nhận tiền trong bao lâu?",
+          "gold_answer": "Từ 7 đến 14 ngày làm việc, tùy theo ngân hàng.",
+          "gold_doc_ids": [
+            "shopee-article-189473"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-189473#0",
+              "doc_id": "shopee-article-189473",
+              "chunk_index": 0,
+              "score": 0.361371,
+              "contains_evidence": true,
+              "preview": "# Shopee article 189473 [Trả hàng/ Hoàn tiền] Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Ho"
+            },
+            {
+              "id": "shopee-article-77245#118",
+              "doc_id": "shopee-article-77245",
+              "chunk_index": 118,
+              "score": 0.308907,
+              "contains_evidence": false,
+              "preview": "Tiền giả, con dấu giả 2.17. Thẻ tín dụng và thẻ ghi nợ 2.18. Tiền tệ 2.19."
+            },
+            {
+              "id": "shopee-article-77243#47",
+              "doc_id": "shopee-article-77243",
+              "chunk_index": 47,
+              "score": 0.308232,
+              "contains_evidence": false,
+              "preview": "Vào từng thời điểm, phương thức thanh toán cho hàng hóa mua trên Sàn Shopee có thể được thực hiện bằng một hoặc nhiều phương thức thanh toán như sau: (i) Thẻ Tín Dụng/Ghi Nợ hoặc t"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Nếu tự sắp xếp gửi hàng hoàn trả thì người mua có phải trả phí trước không?",
+          "gold_answer": "Có. Người mua trả phí trước; Shopee hỗ trợ hoàn phí trong 3-5 ngày làm việc nếu đủ điều kiện.",
+          "gold_doc_ids": [
+            "shopee-article-189477",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-77251#32",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 32,
+              "score": 0.402028,
+              "contains_evidence": true,
+              "preview": "8. TRÁCH NHIỆM VỀ CHI PHÍ HOÀN TRẢ SẢN PHẨM CỦA NGƯỜI MUA 8.1. Với Sản Phẩm mua tại Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm: Theo hình thức “Lấy hàng hoàn trả tại"
+            },
+            {
+              "id": "shopee-article-79508#8",
+              "doc_id": "shopee-article-79508",
+              "chunk_index": 8,
+              "score": 0.314772,
+              "contains_evidence": false,
+              "preview": "Quy trình gửi trả hàng Cồng Kềnh tương tự như những sản phẩm khác: Xem hướng dẫn chi tiết Các phương thức gửi hàng hoàn trả và phí hoàn trả tại đây. Bạn có hài lòng với bài viết nà"
+            },
+            {
+              "id": "shopee-article-77251#34",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 34,
+              "score": 0.312863,
+              "contains_evidence": true,
+              "preview": "Theo hình thức “Tự sắp xếp”: Người Mua cần thanh toán trước chi phí vận chuyển cho việc trả hàng. Shopee sẽ hỗ trợ hoàn lại một phần chi phí vận chuyển cho việc trả hàng dưới hình "
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Người mua chưa nhận được hàng thì cần cung cấp bằng chứng gì?",
+          "gold_answer": "Không cần cung cấp bằng chứng; Shopee xử lý dựa trên hệ thống theo dõi đơn hàng.",
+          "gold_doc_ids": [
+            "shopee-article-79467"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-79467#1",
+              "doc_id": "shopee-article-79467",
+              "chunk_index": 1,
+              "score": 0.44082,
+              "contains_evidence": true,
+              "preview": "1. Khiếu nại chưa nhận được hàng Nếu bạn chưa nhận được hàng, bạn không cần cung cấp bất kỳ bằng chứng nào. Shopee sẽ tự động xử lý yêu cầu dựa trên hệ thống theo dõi đơn hàng."
+            },
+            {
+              "id": "shopee-article-77484#49",
+              "doc_id": "shopee-article-77484",
+              "chunk_index": 49,
+              "score": 0.285367,
+              "contains_evidence": false,
+              "preview": "Khi có bất kỳ khiếu nại hay tranh chấp nào về mất mát hàng hóa xảy ra, vận đơn/hóa đơn vận chuyển sẽ là bằng chứng vững chắc nhất chứng minh Người Bán đã giao hàng. c. Thời hạn cun"
+            },
+            {
+              "id": "shopee-article-79467#9",
+              "doc_id": "shopee-article-79467",
+              "chunk_index": 9,
+              "score": 0.281617,
+              "contains_evidence": false,
+              "preview": "Bằng chứng bổ sung: Nếu có, bạn có thể cung cấp thêm lịch sử chat với người bán hoặc các bằng chứng khác để Shopee có thêm thông tin xử lý. Nếu Shopee cần thêm bằng chứng khác, bạn"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Khi đóng gói hàng hoàn trả, người mua cần quay video và gửi kèm những gì?",
+          "gold_answer": "Quay video đóng gói và gửi đủ hộp, giấy tờ, phụ kiện, quà tặng đi kèm nếu có.",
+          "gold_doc_ids": [
+            "shopee-article-79508"
+          ],
+          "gold_doc_rank": 3,
+          "evidence_rank": null,
+          "hit_at_1": false,
+          "hit_at_3": false,
+          "reciprocal_rank": 0.0,
+          "score": 0,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-77251#28",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 28,
+              "score": 0.354959,
+              "contains_evidence": false,
+              "preview": "Việc hoàn tiền cho Người Mua có thể được Shopee cân nhắc thực hiện mà không cần Người Mua phải hoàn trả hàng cho Người Bán. 6. YÊU CẦU ĐỐI VỚI SẢN PHẨM HOÀN TRẢ Để hạn chế các rủi "
+            },
+            {
+              "id": "shopee-article-77262#4",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 4,
+              "score": 0.297606,
+              "contains_evidence": false,
+              "preview": "1.2. Sau khi Người Mua yêu cầu trả hàng/hoàn tiền, trừ trường hợp được “Hoàn Tiền Ngay”, Người Mua tại Shopee Mall phải hoàn trả Sản Phẩm đến Trung Tâm Xử Lý Trả Hàng của Shopee ho"
+            },
+            {
+              "id": "shopee-article-79508#5",
+              "doc_id": "shopee-article-79508",
+              "chunk_index": 5,
+              "score": 0.296236,
+              "contains_evidence": false,
+              "preview": "Viết mã vận đơn lên hộp hàng: Mã vận đơn: Vào ứng dụng Shopee > Mục Tôi > Trả hàng/ hoàn tiền > Tại đơn đang cần trả hàng, bấm Thông tin lấy hàng hoặc Trả hàng tại bưu cục. Khi đó"
+            }
+          ],
+          "filtered_results": null
+        }
+      ]
+    },
+    "recursive": {
+      "chunk_stats": {
+        "documents": 14,
+        "chunks": 767,
+        "avg_length": 380.8161668839635,
+        "min_length": 59,
+        "max_length": 500
+      },
+      "metrics": {
+        "hit_at_1": 0.4,
+        "hit_at_3": 0.4,
+        "mrr": 0.4,
+        "lab_score": 4,
+        "max_lab_score": 10
+      },
+      "queries": [
+        {
+          "question": "Thực phẩm tươi sống và đông lạnh phải gửi yêu cầu trả hàng/hoàn tiền trong bao lâu?",
+          "gold_answer": "Trong vòng 24 giờ kể từ khi đơn hàng được cập nhật giao hàng thành công.",
+          "gold_doc_ids": [
+            "shopee-article-188931",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": {
+            "audience": "buyer"
+          },
+          "filter_changed_top3": false,
+          "results": [
+            {
+              "id": "shopee-article-77251#9",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 9,
+              "score": 0.500712,
+              "contains_evidence": true,
+              "preview": "3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư"
+            },
+            {
+              "id": "shopee-article-77262#5",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 5,
+              "score": 0.423617,
+              "contains_evidence": false,
+              "preview": "Người Mua tại Shopee Mall có thể yêu cầu hoàn lại tiền và/hoặc trả hàng hóa đã mua tại Shopee Mall (“Sản Phẩm tại Shopee Mall”) bằng cách nhấn vào nút “Yêu Cầu Trả Hàng/Hoàn Tiền” "
+            },
+            {
+              "id": "shopee-article-79233#0",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 0,
+              "score": 0.409322,
+              "contains_evidence": false,
+              "preview": "# Shopee article 79233 [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Hoàn tiền] H"
+            }
+          ],
+          "filtered_results": [
+            {
+              "id": "shopee-article-77251#9",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 9,
+              "score": 0.500712,
+              "contains_evidence": true,
+              "preview": "3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư"
+            },
+            {
+              "id": "shopee-article-77262#5",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 5,
+              "score": 0.423617,
+              "contains_evidence": false,
+              "preview": "Người Mua tại Shopee Mall có thể yêu cầu hoàn lại tiền và/hoặc trả hàng hóa đã mua tại Shopee Mall (“Sản Phẩm tại Shopee Mall”) bằng cách nhấn vào nút “Yêu Cầu Trả Hàng/Hoàn Tiền” "
+            },
+            {
+              "id": "shopee-article-79233#0",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 0,
+              "score": 0.409322,
+              "contains_evidence": false,
+              "preview": "# Shopee article 79233 [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Hoàn tiền] H"
+            }
+          ]
+        },
+        {
+          "question": "Sau khi Shopee chấp nhận hoàn tiền, thẻ tín dụng hoặc ghi nợ nhận tiền trong bao lâu?",
+          "gold_answer": "Từ 7 đến 14 ngày làm việc, tùy theo ngân hàng.",
+          "gold_doc_ids": [
+            "shopee-article-189473"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": null,
+          "hit_at_1": false,
+          "hit_at_3": false,
+          "reciprocal_rank": 0.0,
+          "score": 0,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-189473#0",
+              "doc_id": "shopee-article-189473",
+              "chunk_index": 0,
+              "score": 0.314493,
+              "contains_evidence": false,
+              "preview": "# Shopee article 189473 [Trả hàng/ Hoàn tiền] Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Ho"
+            },
+            {
+              "id": "shopee-article-77243#105",
+              "doc_id": "shopee-article-77243",
+              "chunk_index": 105,
+              "score": 0.292706,
+              "contains_evidence": false,
+              "preview": "Không ảnh hưởng đến các điều khoản khác trong Điều Khoản Dịch Vụ này, Shopee có quyền giữ/ tạm giữ hoặc tạm hoãn ghi nhận tiền bán hàng hoặc giá trị tiền được hoàn trả cho các giao"
+            },
+            {
+              "id": "shopee-article-189473#5",
+              "doc_id": "shopee-article-189473",
+              "chunk_index": 5,
+              "score": 0.291742,
+              "contains_evidence": false,
+              "preview": "Đối với đơn hàng thanh toán bằng Thẻ Tín dụng/Ghi nợ, Shopee chỉ hỗ trợ hoàn tiền về đúng tài khoản Tín dụng/Ghi nợ đã sử dụng khi thanh toán đơn hàng. Đối với hình thức hoàn tiền "
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Nếu tự sắp xếp gửi hàng hoàn trả thì người mua có phải trả phí trước không?",
+          "gold_answer": "Có. Người mua trả phí trước; Shopee hỗ trợ hoàn phí trong 3-5 ngày làm việc nếu đủ điều kiện.",
+          "gold_doc_ids": [
+            "shopee-article-189477",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": null,
+          "hit_at_1": false,
+          "hit_at_3": false,
+          "reciprocal_rank": 0.0,
+          "score": 0,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-77251#38",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 38,
+              "score": 0.369118,
+              "contains_evidence": false,
+              "preview": "8.2. Với Sản Phẩm không thuộc Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm: Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi trả hàng tại bưu cục”: Người Mua khôn"
+            },
+            {
+              "id": "shopee-article-77251#36",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 36,
+              "score": 0.364594,
+              "contains_evidence": false,
+              "preview": "8.1. Với Sản Phẩm mua tại Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm: Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi hàng tại bưu cục”: Người Mua không phải th"
+            },
+            {
+              "id": "shopee-article-77251#35",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 35,
+              "score": 0.332378,
+              "contains_evidence": false,
+              "preview": "đơn yêu cầu trả hàng/hoàn tiền được Shopee chấp nhận hoàn tiền ngay (không trả hàng) (theo quyết định riêng của Shopee), đơn giao không thành công thuộc kênh Người bán tự vận chuyể"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Người mua chưa nhận được hàng thì cần cung cấp bằng chứng gì?",
+          "gold_answer": "Không cần cung cấp bằng chứng; Shopee xử lý dựa trên hệ thống theo dõi đơn hàng.",
+          "gold_doc_ids": [
+            "shopee-article-79467"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-79467#1",
+              "doc_id": "shopee-article-79467",
+              "chunk_index": 1,
+              "score": 0.372565,
+              "contains_evidence": true,
+              "preview": "Khi bạn cần gửi yêu cầu Trả hàng/Hoàn tiền trên Shopee, việc cung cấp đầy đủ và chính xác bằng chứng là rất quan trọng để đảm bảo yêu cầu của bạn được xử lý nhanh chóng. Tùy thuộc "
+            },
+            {
+              "id": "shopee-article-77262#6",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 6,
+              "score": 0.300003,
+              "contains_evidence": false,
+              "preview": "Gian Yêu Cầu Trả Hàng”). Thông thường, ngày Sản Phẩm được cung cấp lần đầu tiên cho Người Mua tại Shopee Mall sẽ là ngày Người Mua tại Shopee Mall nhận được hàng theo ghi nhận trạn"
+            },
+            {
+              "id": "shopee-article-77262#13",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 13,
+              "score": 0.280201,
+              "contains_evidence": false,
+              "preview": "Điều kiện áp dụng Chưa sử dụng Chưa mở hộp Còn đầy đủ phụ kiện kèm theo Không bể, vỡ Còn giấy bảo hành của nhà sản xuất hoặc Người Bán tại Shopee Mall Chưa nhận được hàng/Đã nhận đ"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Khi đóng gói hàng hoàn trả, người mua cần quay video và gửi kèm những gì?",
+          "gold_answer": "Quay video đóng gói và gửi đủ hộp, giấy tờ, phụ kiện, quà tặng đi kèm nếu có.",
+          "gold_doc_ids": [
+            "shopee-article-79508"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": null,
+          "hit_at_1": false,
+          "hit_at_3": false,
+          "reciprocal_rank": 0.0,
+          "score": 0,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-79508#0",
+              "doc_id": "shopee-article-79508",
+              "chunk_index": 0,
+              "score": 0.32138,
+              "contains_evidence": false,
+              "preview": "# Shopee article 79508 [Trả hàng/ Hoàn tiền] Cách đóng gói đơn hàng hoàn trả | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/ Hoàn tiền] Cách đóng gó"
+            },
+            {
+              "id": "shopee-article-77251#32",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 32,
+              "score": 0.313552,
+              "contains_evidence": false,
+              "preview": "Người Mua bắt buộc phải quay video và/hoặc chụp lại ảnh Sản Phẩm ngay khi nhận được và trong lúc đóng gói Sản Phẩm Hoàn Trả về để làm bằng chứng đối chiếu/khiếu nại về sau. Shopee "
+            },
+            {
+              "id": "shopee-article-77251#31",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 31,
+              "score": 0.306598,
+              "contains_evidence": false,
+              "preview": "Để hạn chế các rủi ro phát sinh liên quan đến việc hoàn trả Sản Phẩm, Người Mua lưu ý cần phải đóng gói Sản Phẩm Hoàn Trả theo quy định về đóng gói hàng hóa được quy định tại Chính"
+            }
+          ],
+          "filtered_results": null
+        }
+      ]
+    },
+    "policy_structure": {
+      "chunk_stats": {
+        "documents": 14,
+        "chunks": 1273,
+        "avg_length": 284.2160251374705,
+        "min_length": 33,
+        "max_length": 450
+      },
+      "metrics": {
+        "hit_at_1": 0.8,
+        "hit_at_3": 1.0,
+        "mrr": 0.8666666666666666,
+        "lab_score": 9,
+        "max_lab_score": 10
+      },
+      "queries": [
+        {
+          "question": "Thực phẩm tươi sống và đông lạnh phải gửi yêu cầu trả hàng/hoàn tiền trong bao lâu?",
+          "gold_answer": "Trong vòng 24 giờ kể từ khi đơn hàng được cập nhật giao hàng thành công.",
+          "gold_doc_ids": [
+            "shopee-article-188931",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": {
+            "audience": "buyer"
+          },
+          "filter_changed_top3": false,
+          "results": [
+            {
+              "id": "shopee-article-77251#13",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 13,
+              "score": 0.512786,
+              "contains_evidence": true,
+              "preview": "Tài liệu: CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riên"
+            },
+            {
+              "id": "shopee-article-79233#8",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 8,
+              "score": 0.512672,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền Nhấn Gửi yêu cầu. 2."
+            },
+            {
+              "id": "shopee-article-79233#0",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 0,
+              "score": 0.460153,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền # Shopee article 79233 [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâ"
+            }
+          ],
+          "filtered_results": [
+            {
+              "id": "shopee-article-77251#13",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 13,
+              "score": 0.512786,
+              "contains_evidence": true,
+              "preview": "Tài liệu: CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riên"
+            },
+            {
+              "id": "shopee-article-79233#8",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 8,
+              "score": 0.512672,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền Nhấn Gửi yêu cầu. 2."
+            },
+            {
+              "id": "shopee-article-79233#0",
+              "doc_id": "shopee-article-79233",
+              "chunk_index": 0,
+              "score": 0.460153,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền # Shopee article 79233 [Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâ"
+            }
+          ]
+        },
+        {
+          "question": "Sau khi Shopee chấp nhận hoàn tiền, thẻ tín dụng hoặc ghi nợ nhận tiền trong bao lâu?",
+          "gold_answer": "Từ 7 đến 14 ngày làm việc, tùy theo ngân hàng.",
+          "gold_doc_ids": [
+            "shopee-article-189473"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 3,
+          "hit_at_1": false,
+          "hit_at_3": true,
+          "reciprocal_rank": 0.3333333333333333,
+          "score": 1,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-189473#1",
+              "doc_id": "shopee-article-189473",
+              "chunk_index": 1,
+              "score": 0.370809,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn Sau khi gửi trả hàng, bạn sẽ nhận được thông báo xác nhận hoàn tiền qua mục Thông báo > Cập nhật"
+            },
+            {
+              "id": "shopee-article-189473#9",
+              "doc_id": "shopee-article-189473",
+              "chunk_index": 9,
+              "score": 0.331329,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn Đối với đơn hàng thanh toán bằng Thẻ Tín dụng/Ghi nợ, Shopee chỉ hỗ trợ hoàn tiền về đúng tài kh"
+            },
+            {
+              "id": "shopee-article-189473#4",
+              "doc_id": "shopee-article-189473",
+              "chunk_index": 4,
+              "score": 0.314165,
+              "contains_evidence": true,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn Thẻ tín dụng/ghi nợ liên kết với tài khoản Apple Pay 7 - 14 ngày làm việc (tùy theo ngân hàng) G"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Nếu tự sắp xếp gửi hàng hoàn trả thì người mua có phải trả phí trước không?",
+          "gold_answer": "Có. Người mua trả phí trước; Shopee hỗ trợ hoàn phí trong 3-5 ngày làm việc nếu đủ điều kiện.",
+          "gold_doc_ids": [
+            "shopee-article-189477",
+            "shopee-article-77251"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-77251#58",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 58,
+              "score": 0.40089,
+              "contains_evidence": true,
+              "preview": "Tài liệu: CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN Với Sản Phẩm mua tại Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm: Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi hàng"
+            },
+            {
+              "id": "shopee-article-77251#60",
+              "doc_id": "shopee-article-77251",
+              "chunk_index": 60,
+              "score": 0.355029,
+              "contains_evidence": false,
+              "preview": "Tài liệu: CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN 8.2. Với Sản Phẩm không thuộc Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm: Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc"
+            },
+            {
+              "id": "shopee-article-189477#12",
+              "doc_id": "shopee-article-189477",
+              "chunk_index": 12,
+              "score": 0.354733,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả 1.4. Lưu ý khi chọn hình thức Tự sắp xếp: Bạn phải lưu lại hóa đơn trả hàng với đầy đủ thông tin: "
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Người mua chưa nhận được hàng thì cần cung cấp bằng chứng gì?",
+          "gold_answer": "Không cần cung cấp bằng chứng; Shopee xử lý dựa trên hệ thống theo dõi đơn hàng.",
+          "gold_doc_ids": [
+            "shopee-article-79467"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-79467#3",
+              "doc_id": "shopee-article-79467",
+              "chunk_index": 3,
+              "score": 0.392881,
+              "contains_evidence": true,
+              "preview": "Tài liệu: [Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền Khiếu nại chưa nhận được hàng Nếu bạn chưa nhận được hàng, bạn không cần cung cấp bất k"
+            },
+            {
+              "id": "shopee-article-77262#8",
+              "doc_id": "shopee-article-77262",
+              "chunk_index": 8,
+              "score": 0.285731,
+              "contains_evidence": false,
+              "preview": "Tài liệu: Điều Khoản Dịch Vụ của Shopee Mall ngày Sản Phẩm tại Shopee Mall được cung cấp lần đầu tiên cho Người Mua tại Shopee Mall (“Thời Gian Yêu Cầu Trả Hàng”). Thông thường, ng"
+            },
+            {
+              "id": "shopee-article-77484#84",
+              "doc_id": "shopee-article-77484",
+              "chunk_index": 84,
+              "score": 0.272528,
+              "contains_evidence": false,
+              "preview": "Tài liệu: CHÍNH SÁCH VẬN CHUYỂN SHOPEE (phiên bản ngày 11/12/2025) c. Thời hạn cung cấp bằng chứng: Trừ trường hợp có yêu cầu khác của Shopee trong từng vụ việc cụ thể, Người k"
+            }
+          ],
+          "filtered_results": null
+        },
+        {
+          "question": "Khi đóng gói hàng hoàn trả, người mua cần quay video và gửi kèm những gì?",
+          "gold_answer": "Quay video đóng gói và gửi đủ hộp, giấy tờ, phụ kiện, quà tặng đi kèm nếu có.",
+          "gold_doc_ids": [
+            "shopee-article-79508"
+          ],
+          "gold_doc_rank": 1,
+          "evidence_rank": 1,
+          "hit_at_1": true,
+          "hit_at_3": true,
+          "reciprocal_rank": 1.0,
+          "score": 2,
+          "metadata_filter": null,
+          "filter_changed_top3": null,
+          "results": [
+            {
+              "id": "shopee-article-79508#2",
+              "doc_id": "shopee-article-79508",
+              "chunk_index": 2,
+              "score": 0.391835,
+              "contains_evidence": true,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Cách đóng gói đơn hàng hoàn trả Đóng hàng: Bạn cần đóng gói và quay video quá trình đóng gói sản phẩm hoàn trả, bao gồm hộp của nhà sản xuất, giấy t"
+            },
+            {
+              "id": "shopee-article-79508#9",
+              "doc_id": "shopee-article-79508",
+              "chunk_index": 9,
+              "score": 0.378172,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Cách đóng gói đơn hàng hoàn trả Khi đóng gói hàng hoàn trả, bạn vui lòng dán hoặc viết thông tin trả hàng tại hộp đóng gói vận chuyển. ⚠️ Lư"
+            },
+            {
+              "id": "shopee-article-79508#4",
+              "doc_id": "shopee-article-79508",
+              "chunk_index": 4,
+              "score": 0.375133,
+              "contains_evidence": false,
+              "preview": "Tài liệu: [Trả hàng/ Hoàn tiền] Cách đóng gói đơn hàng hoàn trả Luôn ghi hình lại quá trình đóng gói hàng hoàn, nhằm đảm bảo quyền lợi khi Người bán có phát sinh khiếu nại hàng hoà"
+            }
+          ],
+          "filtered_results": null
+        }
+      ]
+    }
+  }
+}

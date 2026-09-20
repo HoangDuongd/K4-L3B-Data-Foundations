@@ -15,29 +15,32 @@
 ### Độ tương tự Cosine (Cosine Similarity) (Bài tập 1.1)
 
 **Độ tương tự cosine cao (High cosine similarity) nghĩa là gì?**
-> *Viết 1-2 câu:*
+> Độ tương tự cosine cao nghĩa là hai vector embedding trỏ gần cùng một hướng trong không gian vector. Với văn bản, điều này thường cho thấy hai câu/đoạn có ý nghĩa gần nhau, dù có thể dùng từ ngữ khác nhau.
 
 **Ví dụ có độ tương tự CAO:**
-- Câu A:
-- Câu B:
-- Tại sao tương đồng:
+- Câu A: Người mua có thể gửi yêu cầu trả hàng nếu sản phẩm bị lỗi.
+- Câu B: Khách hàng được phép yêu cầu hoàn trả khi hàng nhận được bị hư hỏng.
+- Tại sao tương đồng: Hai câu đều nói về quyền yêu cầu trả hàng/hoàn trả khi sản phẩm có vấn đề.
 
 **Ví dụ có độ tương tự THẤP:**
-- Câu A:
-- Câu B:
-- Tại sao khác:
+- Câu A: Người mua có thể gửi yêu cầu trả hàng nếu sản phẩm bị lỗi.
+- Câu B: Hệ thống gợi ý sản phẩm dựa trên lịch sử tìm kiếm của người dùng.
+- Tại sao khác: Câu A nói về chính sách trả hàng, còn câu B nói về hệ thống gợi ý sản phẩm, hai nội dung gần như không liên quan.
 
 **Tại sao độ tương tự cosine (cosine similarity) được ưu tiên hơn khoảng cách Euclid (Euclidean distance) cho text embeddings?**
-> *Viết 1-2 câu:*
+> Cosine similarity tập trung vào hướng của vector, tức là quan hệ về mặt ý nghĩa, thay vì độ lớn tuyệt đối của vector. Điều này phù hợp với text embeddings vì hai câu có cùng nghĩa nên được xem là gần nhau ngay cả khi độ dài hoặc cường độ biểu diễn của vector khác nhau.
 
 ### Bài toán tính toán Chunking (Bài tập 1.2)
 
 **Tài liệu 10,000 ký tự, chunk_size=500, overlap=50. Bao nhiêu chunks?**
-> *Trình bày phép tính:*
-> *Đáp án:*
+> Công thức: `ceil((document_length - overlap) / (chunk_size - overlap))`
+>
+> Thay số: `ceil((10000 - 50) / (500 - 50)) = ceil(9950 / 450) = ceil(22.11) = 23`
+>
+> Đáp án: **23 chunks**
 
 **Nếu độ chồng chéo (overlap) tăng lên 100, số lượng chunk thay đổi thế nào? Tại sao muốn độ chồng chéo nhiều hơn?**
-> *Viết 1-2 câu:*
+> Khi `overlap=100`, số chunk là `ceil((10000 - 100) / (500 - 100)) = ceil(9900 / 400) = ceil(24.75) = 25 chunks`, tức là tăng từ 23 lên 25 chunks. Overlap lớn hơn giúp giữ ngữ cảnh giữa hai chunk liền kề, giảm nguy cơ cắt mất thông tin quan trọng ở ranh giới chunk, nhưng đổi lại sẽ tạo nhiều chunk hơn và tốn chi phí lưu trữ/truy xuất hơn.
 
 ---
 
@@ -75,10 +78,31 @@ Vượt qua bộ kiểm thử là điều kiện tính điểm phần này.
 ### Kết Quả Kiểm Thử (Test Results)
 
 ```
-# Dán kết quả (output) của: pytest tests/ -v
+.venv/bin/python -m pytest tests/ -v
+
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1
+rootdir: /home/duong/AI_in_action/lab_07/K4-L3B-Data-Foundations
+collected 42 items
+
+tests/test_solution.py::TestProjectStructure::test_root_main_entrypoint_exists PASSED
+tests/test_solution.py::TestProjectStructure::test_src_package_exists PASSED
+tests/test_solution.py::TestClassBasedInterfaces::test_chunker_classes_exist PASSED
+tests/test_solution.py::TestClassBasedInterfaces::test_mock_embedder_exists PASSED
+tests/test_solution.py::TestFixedSizeChunker::* PASSED
+tests/test_solution.py::TestSentenceChunker::* PASSED
+tests/test_solution.py::TestRecursiveChunker::* PASSED
+tests/test_solution.py::TestEmbeddingStore::* PASSED
+tests/test_solution.py::TestKnowledgeBaseAgent::* PASSED
+tests/test_solution.py::TestComputeSimilarity::* PASSED
+tests/test_solution.py::TestCompareChunkingStrategies::* PASSED
+tests/test_solution.py::TestEmbeddingStoreSearchWithFilter::* PASSED
+tests/test_solution.py::TestEmbeddingStoreDeleteDocument::* PASSED
+
+============================== 42 passed in 0.21s ==============================
 ```
 
-**Số lượng bài test vượt qua (pass):** __ / 42
+**Số lượng bài test vượt qua (pass):** 42 / 42
 
 ---
 
